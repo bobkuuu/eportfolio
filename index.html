@@ -47,7 +47,7 @@
 
               <h4>(Prototype Created) TPA6120 Headphone Amplifier (Redesigning In progress)</h4>
 
-              <p>The first prototype was built and tested in Feb., 2016, albeit the result is somewhat unexpected. Both channels reproduced the music with heavy noise. The left channel also occasionally shuts down on its own.</p>
+              <p>The first prototype was built and tested in Feb., 2016, albeit without success. Both channels reproduced the music with heavy noise. The left channel also occasionally shuts down on its own.</p>
               <p>Having found that the power supply section was flawed and cannot provide sufficient current to the TPA6120, I switched to use an NJM4556 Op-amp in series with the TLE2426 vitual ground IC to boost the current output of the ground channel.</p>
               <p>This 2nd version is built successfully. Equipped with a current-feedback architecture it seems to have a more clear sound than ordinary audio single-ic design.</p>
               <p>This design will later be modulized and put on a smaller board to form a fully modulized portable DAC, along with the SA9027 project below.</p>
@@ -67,7 +67,11 @@
               <hr>
 
               <h4>(Present) DIY Discrete Operational Amplifier for Audio purposes (In progress)</h4>
-
+              
+              <p>Traditional operational amplifier features high gain input-stage and low-power class AB output stages. While these attributes are sufficient for most low frequency analog design, the low-impedance load driving capability seemed to be insufficient for headphone amplifier application.</p>
+              <p>Perhaps most consumer-grade headphones are rated for 32 &Omega; or well below 100 &Omega;. General purpose op-amps usually provide optimal driving power at 600 &Omega;, which can inflict impedance mismatch.</p>
+              <p>The Japanese reference link below enlightened me to create my own op-amp for such purposes. The actual gain might be lower in these customized op-amp than traditional FET-input devices, the output impedance may, nevertheless, be much lower and capable of driving headphones. These types of specialized op-amps can also be designed as a substitution for normal op-amps.</p>
+                
               <p> (Reference: <a href="http://innocent-key.com/wordpress/?page_id=2164">Innocent Key</a>) </p>
 
               <hr>
