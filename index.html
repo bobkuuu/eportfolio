@@ -45,7 +45,29 @@
             <h3>
               <a id="past-projects-and-experience" class="anchor" href="#past-projects-and-experience" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Past Projects and Experience</h3>
 
-              <h4>(Present) Modular Audio System - A complete audio system (In progress)</h4>
+              <h4>(Future) Website Update</h4>
+              <p>Feeling this static webpage with only text and images can be as boring as textbook, I might redesign the page someday with Bootstrap or CSS learnt back when I am an undergraduate student. It could take a long time though, since the author of this website still prioritize audio projects over website maintainance. :)</p>
+
+              <h4>(Present) Feedback and Circuit Architecture Studies (In progress, part of MAS)</h4>
+
+              <p>Analog circuit textbooks usually introduce feedback as an effective way to control circuit parameters and Negative Feedback can aid circuit stability. However over the years some audiophiles insist the NFB can also negatively harm the sonic quality in aspects like Transient Intermodulation Distortion (TIM) or other Intermodulation Distortion(IMD). Such flaws are not harmonic - meaning that the resulting sound coming from the system with lots of NFB may sound unnatural and uncomfortable. Nelson Pass even quoted that some audiophiles think feedback can "sucks the life out of the music", added with support from studies of John Linsley Hood that NFB can reduce some lower order harmonic distortion content but adds up the higher content. These defects are much perceivable than lower order counterparts and hence making amps with NFB measures well but sound dull and lifeless.</p>
+
+              <p>Since I am in the quest of studying different circuit architecture and implementing them into the MAS design, I found that many famous commercial amp design still uses NFB, even when the journals about TIM was out since 1970s. Trained with an engineering mind, I feel like whether to use the feedback mechanism can have tradeoffs like many engineering problem. In fact, I have also read that for audio circuit certain degree of NFB is a must have (maybe in local NFB form instead of global NFB) or the amp would be so instable to control its output and turn into an oscillator. </p>
+
+              <p>Despite the fact that TIM are difficult to measure and rarely used as amplifier benchmarking tool, I decided to give it a preliminary test by listening to some design I have now and in the future. To make it easier for me to test, I would do these design in headphone amp. scale - meaning that the maximum output would be far below 1W or perhaps even lower in class-A region.</p>
+
+              <p>The circuit I am using to test is MAS-HPA2Pre - a Headphone Amp/Pre-amp Multi-purpose design with one single op-amp and single-ended class A output stage. By adjusting how the feedback resistors are placed we can control it to have local NFB or global NFB. Tried the local NFB version with OPA111 and I could say the sound is very different from traditional headphone amp - soft bass and perhaps too much focus on higher mids and treble.</p>
+              <p><img src="images/BMEL-HPA2Pre.png"><br>You will need BP output cap. if you want to try this design on your own.</p>
+
+              <p>One classical design implements FET Input Stage - BJT Voltage Amplification Stage (VAS using Douglas Self's notation) - BJT Push-pull Output Stage. This one has global NFB - very commonly found approach to stablise the amp.</p>
+              <p><img src="images/BMEL-HPA2.png"></p>
+
+              <p>Another one is the FET - BJT - FET symmetrical design. When I started the design I immediately found that matched pair of FETs for input stage is very hard to find nowadays - commonly used 2SK170/2SJ74 or 2SK364/2SJ104 has been obsoleted since mid 2000s. </p>
+              <p><img src="images/BMEL-HPA3A.png"></p>
+
+              <hr>
+
+              <h4>(Present) Modular Audio System (MAS) - A complete audio system (In progress)</h4>
 
               <p>Thinking of making a complete audio system consists of DAC, Headphone Amp, Pre-amp and power amp, I stated a long journey of endless nights with PCB drawing and chassis building has been started from the next half of 2016. </p>
 
